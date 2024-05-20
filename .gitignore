@@ -1,0 +1,20 @@
+# python environment
+/my_env
+
+# dataset
+/dataset
+/datamart
+
+# other 
+/image
+/testing
+/presentation
+.vscode
+
+# .env
+.env.secret
+.env.shared
+
+# files
+note.ipynb
+note.txt
