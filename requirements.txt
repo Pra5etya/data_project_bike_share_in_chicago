@@ -16,7 +16,9 @@ distributed==2024.4.2
 executing==2.0.1
 fonttools==4.46.0
 fsspec==2024.3.1
+h5py==3.11.0
 idna==3.6
+importlib_metadata==7.1.0
 ipykernel==6.27.1
 ipython==8.18.1
 jedi==0.19.1
@@ -67,8 +69,10 @@ threadpoolctl==3.2.0
 toolz==0.12.1
 tornado==6.4
 traitlets==5.14.0
+typing_extensions==4.12.0
 tzdata==2023.3
 urllib3==2.1.0
 wcwidth==0.2.12
 xyzservices==2024.4.0
 zict==3.0.0
+zipp==3.19.1
