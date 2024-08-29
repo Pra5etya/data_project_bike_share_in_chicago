@@ -1,3 +1,5 @@
 casula menjadi trip dan day
 docked bike means not used
 alocate dokced bike to popular area
+
+lalu bagaimana mendapatkan data pyhsical memory capacity dan mentukan logical processornya
