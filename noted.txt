@@ -8,11 +8,3 @@ lalu bagaimana mendapatkan data pyhsical memory capacity dan mentukan logical pr
 pip install --upgrade pip setuptools
 
 
-version https://git-lfs.github.com/spec/v1
-<<<<<<< HEAD
-oid sha256:4e6bc3139d1891500ee57397f9390f83eafd32899f1a0acbbc9a59d25e290b44
-size 243677
-=======
-oid sha256:1834719676360eee38bb793b4d6421e1311bc6f6d544325961c0a2b6097f0b83
-size 136325
->>>>>>> 0c0dc382eeb5e5c9b1ccb3edb1c597558a216f73
