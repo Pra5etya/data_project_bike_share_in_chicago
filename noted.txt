@@ -3,3 +3,6 @@ docked bike means not used
 alocate dokced bike to popular area
 
 lalu bagaimana mendapatkan data pyhsical memory capacity dan mentukan logical processornya
+
+# resolve gputil
+pip install --upgrade pip setuptools
