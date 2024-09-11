@@ -8,3 +8,4 @@ lalu bagaimana mendapatkan data pyhsical memory capacity dan mentukan logical pr
 pip install --upgrade pip setuptools
 
 
+distributed.worker.memory.terminate: 0.9 or False
