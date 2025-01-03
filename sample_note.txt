@@ -1,0 +1,33 @@
+
+HOW TO USE DASK ON CONDA ENV
+============================================================
+conda install dask distributed -c conda-forge
+conda install cloudpickle toolz tornado -c conda-forge
+
+
+Penyesuaian Berdasarkan Dataset (dalam bentuk tabel)
+Jika Anda tahu ukuran dataset Anda, berikut adalah panduan alokasi memori:
+============================================================
+Ukuran Dataset	Memory Limit (per Worker)	Jumlah Worker yang Disarankan
+< 500 MB	512 MB - 1 GB	2 - 4 Workers
+500 MB - 2 GB	1 GB - 2 GB	2 - 3 Workers
+2 GB - 5 GB	2 GB - 4 GB	2 Workers
+> 5 GB	> 4 GB	1 - 2 Workers
+
+
+TERMINAL
+============================================================
+dask-scheduler --host localhost --idle-timeout 5m
+dask-worker --nanny tcp://localhost:8786 --nworkers 4 --nthreads 2 --memory-limit 2GB --worker-memory-limit 2GB --memory-spill True
+
+
+using subprocess:
+===================================================================
+from subprocess import Popen
+
+# Jalankan scheduler
+scheduler = Popen(["dask-scheduler"])
+
+# Jalankan multiple worker
+worker1 = Popen(["dask-worker", "tcp://127.0.0.1:8786", "--nthreads", "2"])
+worker2 = Popen(["dask-worker", "tcp://127.0.0.1:8786", "--nthreads", "2"])
