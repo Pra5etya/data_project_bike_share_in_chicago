@@ -18,8 +18,8 @@ Jika Anda tahu ukuran dataset Anda, berikut adalah panduan alokasi memori:
 
 ## TERMINAL
 ```bash
-dask-scheduler --host localhost --idle-timeout 5m
-dask-worker --nanny tcp://localhost:8786 --nworkers 4 --nthreads 2 --memory-limit 2GB --worker-memory-limit 2GB --memory-spill True
+dask scheduler --host localhost
+dask worker --nanny tcp://localhost:8786 --nworkers 2 --nthreads 2 --memory-limit 3GB
 ```
 
 ## Using Subprocess
