@@ -82,3 +82,17 @@ TIPS
 | CPU-Bound (Agregasi Berat)        | < 4 core              | threads                             |
 | CPU-Bound (Agregasi Berat)        | >= 4 core             | processes                           |
 | Banyak Tugas Paralel atau Cluster | Multi-node/Cluster    | distributed                         |
+
+# Optimasi Dask
+1. Garbage collection
+gunakan setelah melakukan compute() atau persist()
+
+2. Persist()
+gunakan ketika data digunakan secara berulang, menerapkan filter, atau map_partitions
+
+# Rekomendasi Umum untuk Max Blocksize:
+Gunakan panduan ini:
+
+RAM 8 GB → Max blocksize: 128 MB - 256 MB.
+RAM 16 GB → Max blocksize: 256 MB - 512 MB.
+RAM 32 GB atau lebih → Max blocksize: 512 MB - 1 GB.
