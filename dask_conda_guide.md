@@ -96,3 +96,24 @@ Gunakan panduan ini:
 RAM 8 GB → Max blocksize: 128 MB - 256 MB.
 RAM 16 GB → Max blocksize: 256 MB - 512 MB.
 RAM 32 GB atau lebih → Max blocksize: 512 MB - 1 GB.
+
+# dask spill to disk
+pip install diskcache
+
+```python
+from dask.cache import Cache
+import dask
+
+# Tentukan direktori cache
+cache = Cache('/path/to/directory')  # Ganti '/path/to/directory' dengan lokasi direktori untuk cache
+cache.register()
+
+# Contoh array Dask
+import dask.array as da
+x = da.random.random((10000, 10000), chunks=(1000, 1000))
+
+# Operasi akan menggunakan cache jika memori penuh
+y = x + 1
+result = y.compute()
+
+```
