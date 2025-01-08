@@ -117,3 +117,14 @@ y = x + 1
 result = y.compute()
 
 ```
+
+
+# Rekomendasi Waktu sleep untuk Dataset Anda
+Jika ingin menambahkan jeda tetap:
+
+1. Partisi besar (1 juta+ baris): 1-2 detik.
+2. Partisi sedang (500k-1 juta baris): 0.5-1 detik.
+3. Partisi kecil (<500k baris): 0.1-0.5 detik.
+
+len vs shape[0]
+len for each partition - shape all rows in dataframe
