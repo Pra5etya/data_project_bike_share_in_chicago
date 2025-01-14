@@ -31,3 +31,15 @@ scheduler = Popen(["dask-scheduler"])
 # Jalankan multiple worker
 worker1 = Popen(["dask-worker", "tcp://127.0.0.1:8786", "--nthreads", "2"])
 worker2 = Popen(["dask-worker", "tcp://127.0.0.1:8786", "--nthreads", "2"])
+
+
+
+
+version https://git-lfs.github.com/spec/v1
+<<<<<<< HEAD
+oid sha256:217c095aee2b5e50598d87c3a74d54911668e6321434e56ad9ea0df164f6047f
+size 47803
+=======
+oid sha256:15cf254fef24791cfa47e8517ea2dcaca04032159c2cee62502aadbb992bd646
+size 127561
+>>>>>>> cfe3fc305e72e7368eb0611f1c2971ce9954c9b5
